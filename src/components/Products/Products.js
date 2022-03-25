@@ -13,7 +13,7 @@ const Products = ({ product, addToCart }) => {
                 <p style={{ fontSize: '18px', fontWeight: '400' }}>Price: {price}</p>
                 <div className='card-buttons'>
                     <button onClick={() => addToCart(product)} className='add-btn'>Add to Cart</button>
-                    <button className='delete-btn'>Delete Cart</button>
+                    <button className='delete-btn'>Remove</button>
                 </div>
             </div>
         </div>

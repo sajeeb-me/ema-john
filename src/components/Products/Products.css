@@ -38,6 +38,6 @@
     color: white;
 }
 .delete-btn:hover{
-    background-color: red;
+    background-color: rgb(255, 41, 41);
     color: white;
 }

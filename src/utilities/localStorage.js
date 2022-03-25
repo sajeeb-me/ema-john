@@ -20,7 +20,11 @@ const addToLocalStorage = (id) => {
     localStorage.setItem('ordered-list', JSON.stringify(values))
 }
 
+const deleteAllCart = () => {
+    localStorage.removeItem('ordered-list')
+}
 export {
     findStorageItems,
-    addToLocalStorage
+    addToLocalStorage,
+    deleteAllCart
 }
