@@ -1,0 +1,17 @@
+.ordered-list{
+    padding: 20px;
+    position: sticky;
+    top: 0;
+}
+
+.ordered-list button{
+    width: 100%;
+    border: none;
+    padding: 15px 0px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.ordered-list button:hover{
+    background-color: rgb(180, 4, 4);
+    color: white;
+}
