@@ -1,16 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import useProducts from '../../hooks/useProducts';
 import { addToLocalStorage, findStorageItems } from '../../utilities/localStorage';
 import OrderedList from '../OrderedList/OrderedList';
 import Products from '../Products/Products';
 import './Body.css'
 
 const Body = () => {
-    const [products, setProducts] = useState([]);
-    useEffect(() => {
-        fetch('products.json')
-            .then(res => res.json())
-            .then(data => setProducts(data))
-    }, [])
+    const [products, setProducts] = useProducts();
     const [items, setItems] = useState([]);
     const addToCart = (selectedItem) => {
         let newCart = [];
