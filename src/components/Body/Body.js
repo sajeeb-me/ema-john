@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import useProducts from '../../hooks/useProducts';
 import { addToLocalStorage, findStorageItems } from '../../utilities/localStorage';
 import OrderedList from '../OrderedList/OrderedList';
@@ -6,7 +7,7 @@ import Products from '../Products/Products';
 import './Body.css'
 
 const Body = () => {
-    const [products, setProducts] = useProducts();
+    const [products] = useProducts();
     const [items, setItems] = useState([]);
     const addToCart = (selectedItem) => {
         let newCart = [];
@@ -43,7 +44,9 @@ const Body = () => {
                 }
             </div>
             <div className="order-list">
-                <OrderedList items={items} />
+                <OrderedList items={items}>
+                    <Link to='/orders'><button className='btn-child'>Review Orders</button></Link>
+                </OrderedList>
             </div>
         </div>
     );

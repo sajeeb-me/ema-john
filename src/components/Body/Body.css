@@ -1,14 +1,21 @@
-.product-container{
+.product-container {
     display: grid;
     grid-template-columns: 3fr 1fr;
 }
-.shop-products{
+
+.shop-products {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 30px;
     gap: 30px;
 }
-.order-list{
+
+.order-list {
     background-color: orangered;
+    color: white;
+}
+
+.btn-child:hover {
+    background-color: green;
     color: white;
 }

@@ -5,6 +5,7 @@ import useProducts from '../../hooks/useProducts';
 import OrderedList from '../OrderedList/OrderedList';
 import ReviewItem from '../ReviewItem/ReviewItem';
 import { removeFromCart } from '../../utilities/localStorage';
+import { Link } from 'react-router-dom';
 
 const Orders = () => {
     const [products] = useProducts();
@@ -23,7 +24,9 @@ const Orders = () => {
                 }
             </div>
             <div className="order-list">
-                <OrderedList items={items} />
+                <OrderedList items={items}>
+                    <Link to='/'><button className='btn-child'>Proceed to Checkout</button></Link>
+                </OrderedList>
             </div>
         </div>
     );

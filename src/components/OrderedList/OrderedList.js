@@ -2,7 +2,8 @@ import React from 'react';
 import { deleteAllCart } from '../../utilities/localStorage';
 import './OrderedList.css'
 
-const OrderedList = ({ items }) => {
+const OrderedList = (props) => {
+    const { items, children } = props
     let quantity = 0;
     let totalCost = 0;
     let shippingCharge = 0;
@@ -25,7 +26,10 @@ const OrderedList = ({ items }) => {
             <p>Tax: ${tax}</p>
             <h3>Grand Total: ${grandTotal}</h3>
             <div>
-                <button onClick={() => deleteCart()}>Delete Cart</button>
+                <button onClick={() => deleteCart()} className='dlt-btn'>Delete Cart</button>
+            </div>
+            <div>
+                {children}
             </div>
         </div>
     );

@@ -13,8 +13,8 @@ const ReviewItem = ({ item, handleRemoveItem }) => {
             <div className="item-details">
                 <div className="item-info">
                     <h3>{name}</h3>
-                    <p>Price: <span style={{ color: 'orangered' }}>{price}</span></p>
-                    <p><small>Shipping Charge: {shipping}</small></p>
+                    <p>Price: <span style={{ color: 'orangered' }}>${price}</span></p>
+                    <p><small>Shipping Charge: ${shipping}</small></p>
                     <p><small>Quantity: {quantity}</small></p>
                 </div>
                 <div>

@@ -1,4 +1,4 @@
-.navbar{
+.navbar {
     height: 80px;
     background-color: rgb(31, 12, 5);
     color: white;
@@ -7,11 +7,13 @@
     justify-content: space-between;
     padding: 0 100px;
 }
-.navbar a{
+
+.navbar a {
     text-decoration: none;
     color: white;
     margin-left: 40px;
 }
-.navbar a:hover{
+
+.navbar a:hover {
     color: orangered;
 }
