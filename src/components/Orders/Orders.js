@@ -25,7 +25,7 @@ const Orders = () => {
             </div>
             <div className="order-list">
                 <OrderedList items={items}>
-                    <Link to='/'><button className='btn-child'>Proceed to Checkout</button></Link>
+                    <Link to='/shipment'><button className='btn-child'>Proceed to Checkout</button></Link>
                 </OrderedList>
             </div>
         </div>
