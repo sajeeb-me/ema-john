@@ -4,6 +4,7 @@ import './OrderedList.css'
 
 const OrderedList = (props) => {
     const { items, children } = props
+    // console.log(items)
     let quantity = 0;
     let totalCost = 0;
     let shippingCharge = 0;

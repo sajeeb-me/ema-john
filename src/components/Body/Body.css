@@ -19,3 +19,21 @@
     background-color: green;
     color: white;
 }
+
+.pagination {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination button {
+    background-color: white;
+    margin-right: 10px;
+    border: 1px solid orangered;
+    border-radius: 3px;
+}
+
+.pagination .selected {
+    background-color: orangered;
+    color: white;
+}

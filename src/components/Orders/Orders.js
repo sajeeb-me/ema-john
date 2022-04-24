@@ -9,18 +9,18 @@ import { Link } from 'react-router-dom';
 
 const Orders = () => {
     const [products] = useProducts();
-    const [items, setItems] = useCart(products);
+    const [items, setItems] = useCart();
 
     const handleRemoveItem = selectedItem => {
-        const rest = items.filter(item => item.id !== selectedItem.id)
+        const rest = items.filter(item => item._id !== selectedItem._id)
         setItems(rest)
-        removeFromCart(selectedItem.id)
+        removeFromCart(selectedItem._id)
     }
     return (
         <div className='product-container'>
             <div className="review-items-products">
                 {
-                    items.map(item => <ReviewItem key={item.id} item={item} handleRemoveItem={handleRemoveItem} />)
+                    items.map(item => <ReviewItem key={item._id} item={item} handleRemoveItem={handleRemoveItem} />)
                 }
             </div>
             <div className="order-list">
